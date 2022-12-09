@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: cucumberOptions.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 3, Time elapsed: 0.318 s <<< FAILURE! - in cucumberOptions.TestRunner
+user on amazon landing page(Home Page Demo)  Time elapsed: 0.009 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on amazon landing page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on amazon landing page")
+public void user_on_amazon_landing_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user entered mobile number and password are entered")
+public void user_entered_mobile_number_and_password_are_entered() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on sign up")
+public void click_on_sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user able to see amazon home page")
+public void user_able_to_see_amazon_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+Home Page Demo  Time elapsed: 0 s  <<< ERROR!
+io.cucumber.junit.UndefinedStepException: 
+The step 'user on amazon landing page' and 3 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("user on amazon landing page")
+public void user_on_amazon_landing_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("user entered mobile number and password are entered")
+public void user_entered_mobile_number_and_password_are_entered() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on sign up")
+public void click_on_sign_up() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("user able to see amazon home page")
+public void user_able_to_see_amazon_home_page() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
