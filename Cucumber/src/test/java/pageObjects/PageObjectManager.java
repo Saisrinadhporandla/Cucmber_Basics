@@ -12,11 +12,11 @@ public class PageObjectManager {
 	{
 		this.dr=dr;
 	}
-	public Browser Browser()
-	{
-		browser=new Browser(dr);
-		return browser;
-	}
+//	public Browser Browser()
+//	{
+//		browser=new Browser(dr);
+//		return browser;
+//	}
 	public Credentials Credentials(String str1,String str2)
 	{
 		credentials=new Credentials(dr,str1, str2);

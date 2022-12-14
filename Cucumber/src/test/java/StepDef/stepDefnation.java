@@ -2,17 +2,11 @@ package StepDef;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.Browser;
-import pageObjects.Credentials;
 import pageObjects.PageObjectManager;
-import pageObjects.Searching;
-import pageObjects.Validation;
 import utils.BrowserBase;
 import utils.TestContext;
 
@@ -28,11 +22,9 @@ public class stepDefnation {
 	}
 	@Given("^user on amazon landing page$")
     public void landing() throws Throwable {
-		test.pom.Browser().land();
+		test.browser.WebDriverManager();
     }
 	@When("^user entered mobile number \"([^\"]*)\" and password \"([^\"]*)\"$")
-//	@When("^user entered mobile number\"([^\"]*)\" and password \"([^\"]*)\"$")
-
     public void details(String str1, String str2) throws Throwable {
 //		Credentials land=new Credentials(base.WebDriverManager(),str1,str2);
 //		land.log_In();
