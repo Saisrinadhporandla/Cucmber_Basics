@@ -28,28 +28,27 @@ public class stepDefnation {
 	}
 	@Given("^user on amazon landing page$")
     public void landing() throws Throwable {
-		WebDriverManager.chromedriver().setup();
-		//test.dr=new ChromeDriver();
 		test.pom.Browser().land();
-		//pro.browser.land();
-//		Browser browser=new Browser(test.driver);
-//		browser.land();
     }
-	@When("^user entered mobile number\"([^\"]*)\" and password \"([^\"]*)\"$")
+	@When("^user entered mobile number \"([^\"]*)\" and password \"([^\"]*)\"$")
+//	@When("^user entered mobile number\"([^\"]*)\" and password \"([^\"]*)\"$")
+
     public void details(String str1, String str2) throws Throwable {
-		Credentials land=new Credentials(base.WebDriverManager(),str1,str2);
-		land.log_In();
+//		Credentials land=new Credentials(base.WebDriverManager(),str1,str2);
+//		land.log_In();
+		test.pom.Credentials(str1, str2).log_In();
 		
     }
 	 @And("^user searched for \"([^\"]*)\" in search bar$")
 	    public void search(String mbl) throws Throwable {
-		 Searching search=new Searching(base.WebDriverManager(),mbl);
-		 search.add();
+//		 Searching search=new Searching(base.WebDriverManager(),mbl);
+//		 search.add();
+		 test.pom.Searching(mbl).add();
 	    }
 	 @Then("^user able to see products retated to one plus 10 pro$")
 	 public void result()
 	 {
-		 
+		 test.pom.Validation().add();
 //		 Validation valid=new Validation(test.driver);
 //		 valid.add();
 	 }

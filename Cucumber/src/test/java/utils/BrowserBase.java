@@ -9,10 +9,11 @@ public class BrowserBase {
 	public WebDriver dr;
 	public WebDriver WebDriverManager()
 	{
-		
+		if(dr==null) {
 		WebDriverManager.chromedriver().setup();
 		dr=new ChromeDriver();
 		dr.get("https://www.amazon.com/");	
+		}
 		return dr;
 	}
 
