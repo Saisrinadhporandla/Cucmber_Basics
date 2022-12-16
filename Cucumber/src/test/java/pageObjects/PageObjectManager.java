@@ -2,6 +2,8 @@ package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.datatable.DataTable;
+
 public class PageObjectManager {
 	public WebDriver dr;
 	public Browser browser;
@@ -17,13 +19,13 @@ public class PageObjectManager {
 //		browser=new Browser(dr);
 //		return browser;
 //	}
-	public Credentials Credentials(String str1,String str2)
+	public Credentials Credentials(DataTable data)
 	{
-		credentials=new Credentials(dr,str1, str2);
+		credentials=new Credentials(dr,data);
 		return credentials;
 				
 	}
-	public Searching Searching(String mbl)
+	public Searching Searching(DataTable mbl)
 	{
 		search= new Searching(dr,mbl);
 		return search;

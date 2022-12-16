@@ -1,14 +1,18 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.cucumber.datatable.DataTable;
+
 public class Searching {
 	WebDriver dr;
-	String mbl;
-	public Searching(WebDriver dr,String mbl)
+	DataTable mbl;
+	public Searching(WebDriver dr,DataTable mbl)
 	{
 		this.mbl=mbl;
 		this.dr=dr;
@@ -20,7 +24,9 @@ public class Searching {
 	WebElement click5;
 	public void add()
 	{
-		search.sendKeys("one plus 10 pro");
+		List<List<String>> obj=mbl.asLists();
+		String mbl1=obj.get(0).get(0);
+		search.sendKeys(mbl1);
 		click5.click();
 
 }
